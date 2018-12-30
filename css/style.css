@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  color: #405365;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+h1 {
+  background-color: #28323c;
+  color: #fff;
+  margin: 0;
+  padding: 1.2em 0;
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+
+.banner p,
+footer {
+  color: grey;
+}
+
+h2,
+legend {
+  font-size: 1.2em;
+  color: #28323c;
+  font-weight: bold;
+}
+
+main,
+.banner {
+  margin: 0 1em;
+}
+
+.banner {
+  border-bottom: 4px solid #28323c;
+  padding: 1em 0;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 2px 0 2em 0;
+}
+
+label {
+  display: block;
+  padding: 1em 0;
+}
+
+label.light {
+  display: inline;
+}
+
+legend {
+  border-top: 2px solid #28323c;
+  display: block;
+  width: 100%;
+  padding: 1em 0;
+}
+
+.dark {
+  border-radius: 6px;
+  border: 2px solid white;
+  background-color: #edeeef;
+  display: block;
+  width: 100%;
+  color: #28323c;
+  height: 3.5em;
+  padding: 1em 1em;
+}
+
+.dark:required::placeholder {
+  color: grey;
+  text-align: right;
+  font-style: italic;
+  font-size: .8em;
+  padding-right: 4px;
+}
+
+.dark:focus {
+  outline-width: 0;
+  border: 2px solid #3d5e80;
+}
+
+#zip {
+  width: 160px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  margin: .5em 1em .5em 0;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+  font-weight: bold;
+}
+
+#comment {
+  height: 100px;
+}
+
+button {
+  width: 100%;
+  background-color: #45b3ac;
+  color: #fff;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 1.1em;
+  border-radius: 6px;
+}
+
+footer {
+  font-style: italic;
+  font-size: small;
+  padding: 1em 0;
+}
+
+@media (min-width: 760px) {
+  main,
+  .banner {
+    margin: 0 auto;
+    width: 70%;
+    max-width: 700px;
+  }
+  .banner {
+    padding: 2.5em 0;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  fieldset {
+    margin-bottom: 3em;
+  }
+  legend {
+    padding-top: 3em;
+  }
+}

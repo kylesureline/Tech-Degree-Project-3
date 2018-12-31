@@ -148,16 +148,16 @@ footer {
   legend {
     padding-top: 3em;
   }
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
   .item {
     margin: .5em 0;
-    display: flex;
-    flex-direction: row;
   }
   .item > label {
-    flex: 1 200px;
+    display: inline-block;
+    width: 200px;
+  }
+  .item > input,
+  .item > select {
+    display: inline-block;
+    width: calc(100% - 210px);
   }
 }

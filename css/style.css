@@ -80,9 +80,10 @@ legend {
   color: #28323c;
   height: 3.5em;
   padding: 1em 1em;
+  transition: .5s;
 }
 
-.dark:required::placeholder {
+.dark::placeholder {
   color: grey;
   text-align: right;
   font-style: italic;
@@ -99,9 +100,15 @@ legend {
   width: 160px;
 }
 
+input:focus,
+select:focus,
+textarea {
+  opacity: .7;
+}
+
 input[type="checkbox"],
 input[type="radio"] {
-  margin: .5em 1em .5em 0;
+  margin: .5em 1em .5em 1em;
 }
 
 input[type="checkbox"]:checked + label,
@@ -129,7 +136,29 @@ footer {
   padding: 1em 0;
 }
 
-@media (min-width: 760px) {
+.secondary {
+  background-color: #85A7C8;
+  border-radius: 0 0 6px 6px;
+  color: #303D48;
+}
+
+.secondary label,
+.secondary legend {
+  padding-left: 1em;
+}
+
+.secondary label.light {
+  padding-left: 0;
+}
+
+.secondary textarea {
+  margin: 0 1em 1em 1em;
+  width: calc(100% - 2em);
+}
+
+/* Media Queries */
+
+@media (min-width: 769px) {
   main,
   .banner {
     margin: 0 auto;

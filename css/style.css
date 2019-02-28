@@ -80,7 +80,7 @@ legend {
   color: #28323c;
   height: 3.5em;
   padding: 1em 1em;
-  transition: .5s;
+  transition: .5s border;
 }
 
 .dark::placeholder {
